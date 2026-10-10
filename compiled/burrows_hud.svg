@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="64" viewBox="0 0 256 64" shape-rendering="crispEdges">
+  <title>Mouse burrows and food progress HUD sheet</title>
+  <defs>
+    <symbol id="hole" viewBox="0 0 32 32"><path fill="#61432f" d="M5 17h2v-4h3v-3h4V8h7v2h4v3h3v5h2v6h-2v3H7v-3H5z"/><path fill="#9a6a40" d="M7 16h2v-3h4v-2h9v2h4v3h2v6h-2v2H8v-2H7z"/><path fill="#b88752" d="M9 15h3v2H9zM20 13h4v2h-4zM11 23h4v2h-4z"/><path fill="#201e1b" d="M11 19h3v2h-3zM18 19h3v2h-3zM14 22h4v2h-4z"/><path fill="#d9b078" d="M6 15h2v2H6zM25 17h2v2h-2z"/></symbol>
+    <symbol id="open0" viewBox="0 0 32 32"><use href="#hole"/><path fill="#c5925c" d="M7 12h3v2H7zM22 11h3v2h-3z"/></symbol>
+    <symbol id="open1" viewBox="0 0 32 32"><use href="#hole"/><path fill="#c5925c" d="M6 15h3v2H6zM24 14h3v2h-3z"/></symbol>
+    <symbol id="open2" viewBox="0 0 32 32"><use href="#hole"/><path fill="#c5925c" d="M8 11h3v2H8zM23 12h3v2h-3z"/></symbol>
+    <symbol id="open3" viewBox="0 0 32 32"><use href="#hole"/><path fill="#c5925c" d="M7 14h3v2H7zM24 12h3v2h-3z"/></symbol>
+    <symbol id="fill1" viewBox="0 0 32 32"><use href="#hole"/><path fill="#9c754e" d="M8 23h4v2H8zM20 23h4v2h-4z"/></symbol>
+    <symbol id="fill2" viewBox="0 0 32 32"><use href="#hole"/><path fill="#9c754e" d="M8 22h5v3H8zM19 22h5v3h-5z"/><path fill="#bb9467" d="M13 23h6v2h-6z"/></symbol>
+    <symbol id="fill3" viewBox="0 0 32 32"><use href="#hole"/><path fill="#9c754e" d="M8 21h6v4H8zM18 21h6v4h-6z"/><path fill="#bb9467" d="M13 22h6v3h-6z"/></symbol>
+    <symbol id="fill4" viewBox="0 0 32 32"><use href="#hole"/><path fill="#9c754e" d="M8 20h7v5H8zM17 20h7v5h-7z"/><path fill="#bb9467" d="M14 21h4v4h-4z"/><path fill="#35251b" d="M13 21h6v2h-6z"/></symbol>
+    <symbol id="barbase" viewBox="0 0 32 32"><path fill="#342a24" d="M3 10h2V8h22v2h2v14h-2v2H5v-2H3z"/><path fill="#b98a54" d="M5 11h22v12H5z"/><path fill="#63452f" d="M6 12h20v10H6z"/><path fill="#d9bd83" d="M4 9h24v2H4zM4 23h24v2H4z"/></symbol>
+    <symbol id="bar0" viewBox="0 0 32 32"><use href="#barbase"/></symbol>
+    <symbol id="bar1" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/></symbol>
+    <symbol id="bar2" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/><path fill="#e6a05a" d="M10 14h3v3h-3zM10 17h3v3h-3z"/></symbol>
+    <symbol id="bar3" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/><path fill="#e6a05a" d="M10 14h3v3h-3zM10 17h3v3h-3z"/><path fill="#789253" d="M13 14h3v3h-3zM13 17h3v3h-3z"/></symbol>
+    <symbol id="bar4" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/><path fill="#e6a05a" d="M10 14h3v3h-3zM10 17h3v3h-3z"/><path fill="#789253" d="M13 14h3v3h-3zM13 17h3v3h-3z"/><path fill="#c65d42" d="M16 14h3v3h-3zM16 17h3v3h-3z"/></symbol>
+    <symbol id="bar5" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/><path fill="#e6a05a" d="M10 14h3v3h-3zM10 17h3v3h-3z"/><path fill="#789253" d="M13 14h3v3h-3zM13 17h3v3h-3z"/><path fill="#c65d42" d="M16 14h3v3h-3zM16 17h3v3h-3z"/><path fill="#f0d078" d="M19 14h3v3h-3zM19 17h3v3h-3z"/></symbol>
+    <symbol id="bar6" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/><path fill="#e6a05a" d="M10 14h3v3h-3zM10 17h3v3h-3z"/><path fill="#789253" d="M13 14h3v3h-3zM13 17h3v3h-3z"/><path fill="#c65d42" d="M16 14h3v3h-3zM16 17h3v3h-3z"/><path fill="#f0d078" d="M19 14h3v3h-3zM19 17h3v3h-3z"/><path fill="#a9563f" d="M22 14h3v3h-3zM22 17h3v3h-3z"/></symbol>
+    <symbol id="bar7" viewBox="0 0 32 32"><use href="#barbase"/><path fill="#f4dda1" d="M7 14h3v3H7zM7 17h3v3H7z"/><path fill="#e6a05a" d="M10 14h3v3h-3zM10 17h3v3h-3z"/><path fill="#789253" d="M13 14h3v3h-3zM13 17h3v3h-3z"/><path fill="#c65d42" d="M16 14h3v3h-3zM16 17h3v3h-3z"/><path fill="#f0d078" d="M19 14h3v3h-3zM19 17h3v3h-3z"/><path fill="#a9563f" d="M22 14h3v3h-3zM22 17h3v3h-3z"/><path fill="#a3b276" d="M25 14h1v6h-1z"/></symbol>
+  </defs>
+  <use href="#open0" x="0" y="0"/><use href="#open1" x="32" y="0"/><use href="#open2" x="64" y="0"/><use href="#open3" x="96" y="0"/>
+  <use href="#fill1" x="128" y="0"/><use href="#fill2" x="160" y="0"/><use href="#fill3" x="192" y="0"/><use href="#fill4" x="224" y="0"/>
+  <use href="#bar0" x="0" y="32"/><use href="#bar1" x="32" y="32"/><use href="#bar2" x="64" y="32"/><use href="#bar3" x="96" y="32"/>
+  <use href="#bar4" x="128" y="32"/><use href="#bar5" x="160" y="32"/><use href="#bar6" x="192" y="32"/><use href="#bar7" x="224" y="32"/>
+</svg>

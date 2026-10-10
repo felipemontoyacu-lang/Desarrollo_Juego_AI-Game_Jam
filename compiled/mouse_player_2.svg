@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="256" viewBox="0 0 512 256" shape-rendering="crispEdges">
+  <title>Mouse player 2 sprite sheet</title>
+  <style>
+    .facing { transform-box: fill-box; transform-origin: center; transform: rotate(var(--turn, 0deg)); }
+    .fur { fill: var(--fur, #b87543); }
+    .shade { fill: var(--shade, #70442f); }
+    .light { fill: var(--light, #efc995); }
+    .accent { fill: var(--accent, #e3b84f); }
+  </style>
+  <defs>
+    <symbol id="core" viewBox="0 0 32 32">
+      <path class="shade" d="M14 22h4v2h3v2h2v2h-2v-2h-3v-2h-4z"/>
+      <path class="fur" d="M9 14h2v-3h2V8h2V6h3v2h3v3h2v3h2v7h-2v3h-3v2h-7v-2h-3v-3H9z"/>
+      <path class="light" d="M11 15h2v-2h2v-2h5v2h2v4h-2v2h-7v-2h-2z"/>
+      <path class="shade" d="M6 7h2V5h4v2h2v4h-2v2H8v-2H6zM18 7h2V5h4v2h2v4h-2v2h-4v-2h-2z"/>
+      <path class="accent" d="M11 20h3v2h4v-2h3v3h-2v2h-6v-2h-2z"/>
+      <path fill="#30251f" d="M12 13h2v2h-2zM19 13h2v2h-2z"/>
+      <path fill="#df8c89" d="M15 16h3v2h-3z"/>
+      <path fill="#f6e7cf" d="M8 15h3v1H8zM21 15h3v1h-3z"/>
+    </symbol>
+    <symbol id="idle0" viewBox="0 0 32 32"><use href="#core"/></symbol>
+    <symbol id="idle1" viewBox="0 0 32 32"><g transform="translate(0 -1)"><use href="#core"/></g></symbol>
+    <symbol id="idle2" viewBox="0 0 32 32"><use href="#core"/><path class="accent" d="M13 20h6v2h-6z"/></symbol>
+    <symbol id="idle3" viewBox="0 0 32 32"><g transform="translate(0 -1)"><use href="#core"/></g></symbol>
+    <symbol id="run0" viewBox="0 0 32 32"><use href="#core"/><path class="shade" d="M8 19h4v3H9v3H6v-2h2zM20 20h4v2h2v3h-3v-2h-3z"/></symbol>
+    <symbol id="run1" viewBox="0 0 32 32"><g transform="translate(0 -1)"><use href="#core"/><path class="shade" d="M8 20h4v2H9v2H6v-2h2zM20 20h4v2h2v2h-3v-2h-3z"/></g></symbol>
+    <symbol id="run2" viewBox="0 0 32 32"><use href="#core"/><path class="shade" d="M8 20h4v2h-3v3H6v-2h2zM20 19h4v3h2v2h-3v-2h-3z"/></symbol>
+    <symbol id="run3" viewBox="0 0 32 32"><g transform="translate(0 -1)"><use href="#core"/><path class="shade" d="M8 19h4v3H9v3H6v-2h2zM20 20h4v2h2v3h-3v-2h-3z"/></g></symbol>
+    <symbol id="jump0" viewBox="0 0 32 32"><ellipse cx="16" cy="27" rx="8" ry="2" fill="#292522" opacity=".22"/><g transform="translate(0 -3)"><use href="#core"/><path class="shade" d="M8 20h4v2H9v2H6v-2h2zM20 20h4v2h2v2h-3v-2h-3z"/></g></symbol>
+    <symbol id="jump1" viewBox="0 0 32 32"><ellipse cx="16" cy="27" rx="7" ry="2" fill="#292522" opacity=".2"/><g transform="translate(0 -4)"><use href="#core"/><path class="shade" d="M7 19h4v2H8v2H5v-2h2zM21 19h4v2h2v2h-3v-2h-3z"/></g></symbol>
+    <symbol id="jump2" viewBox="0 0 32 32"><ellipse cx="16" cy="27" rx="8" ry="2" fill="#292522" opacity=".2"/><g transform="translate(0 -3)"><use href="#core"/><path class="shade" d="M8 19h4v2H9v2H6v-2h2zM20 19h4v2h2v2h-3v-2h-3z"/></g></symbol>
+    <symbol id="jump3" viewBox="0 0 32 32"><ellipse cx="16" cy="27" rx="7" ry="2" fill="#292522" opacity=".2"/><g transform="translate(0 -2)"><use href="#core"/><path class="shade" d="M7 20h4v2H8v2H5v-2h2zM21 20h4v2h2v2h-3v-2h-3z"/></g></symbol>
+    <symbol id="pass0" viewBox="0 0 32 32"><use href="#core"/><path fill="#e9b83d" d="M22 13h5v2h2v5h-2v2h-5v-2h-2v-5h2z"/></symbol>
+    <symbol id="pass1" viewBox="0 0 32 32"><use href="#core"/><path fill="#e9b83d" d="M23 12h5v2h2v5h-2v2h-5v-2h-2v-5h2z"/><path fill="#f5dfa0" d="M24 14h2v2h-2z"/></symbol>
+    <symbol id="pass2" viewBox="0 0 32 32"><use href="#core"/><path fill="#e9b83d" d="M24 11h5v2h2v5h-2v2h-5v-2h-2v-5h2z"/></symbol>
+    <symbol id="pass3" viewBox="0 0 32 32"><use href="#core"/><path fill="#e9b83d" d="M25 12h5v2h2v5h-2v2h-5v-2h-2v-5h2z"/><path fill="#f5dfa0" d="M26 14h2v2h-2z"/></symbol>
+    <symbol id="row" viewBox="0 0 512 32">
+      <svg class="facing" x="0" y="0" width="32" height="32"><use href="#idle0"/></svg><svg class="facing" x="32" y="0" width="32" height="32"><use href="#idle1"/></svg><svg class="facing" x="64" y="0" width="32" height="32"><use href="#idle2"/></svg><svg class="facing" x="96" y="0" width="32" height="32"><use href="#idle3"/></svg>
+      <svg class="facing" x="128" y="0" width="32" height="32"><use href="#run0"/></svg><svg class="facing" x="160" y="0" width="32" height="32"><use href="#run1"/></svg><svg class="facing" x="192" y="0" width="32" height="32"><use href="#run2"/></svg><svg class="facing" x="224" y="0" width="32" height="32"><use href="#run3"/></svg>
+      <svg class="facing" x="256" y="0" width="32" height="32"><use href="#jump0"/></svg><svg class="facing" x="288" y="0" width="32" height="32"><use href="#jump1"/></svg><svg class="facing" x="320" y="0" width="32" height="32"><use href="#jump2"/></svg><svg class="facing" x="352" y="0" width="32" height="32"><use href="#jump3"/></svg>
+      <svg class="facing" x="384" y="0" width="32" height="32"><use href="#pass0"/></svg><svg class="facing" x="416" y="0" width="32" height="32"><use href="#pass1"/></svg><svg class="facing" x="448" y="0" width="32" height="32"><use href="#pass2"/></svg><svg class="facing" x="480" y="0" width="32" height="32"><use href="#pass3"/></svg>
+    </symbol>
+  </defs>
+  <use href="#row" x="0" y="0" style="--turn:0deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="32" style="--turn:45deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="64" style="--turn:90deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="96" style="--turn:135deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="128" style="--turn:180deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="160" style="--turn:225deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="192" style="--turn:270deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+  <use href="#row" x="0" y="224" style="--turn:315deg;--fur:#b87543;--shade:#70442f;--light:#efc995;--accent:#e3b84f"/>
+</svg>
