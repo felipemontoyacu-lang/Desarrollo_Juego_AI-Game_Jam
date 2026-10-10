@@ -1,6 +1,6 @@
 # Generated Sprite Sheets
 
-All sheets use transparent backgrounds and 32 x 32 cells. Import the SVG files into Godot as textures. The SVG dimensions are the sheet dimensions; no grid lines are drawn into the artwork.
+All sheets use transparent backgrounds and 32 x 32 cells. Load the SVGs as JavaFX `Image` resources; the sheet dimensions are the image dimensions, and no grid lines are drawn into the artwork.
 
 ## Mouse Players
 
@@ -41,8 +41,8 @@ Sheet size: 256 x 64 px; 8 columns x 2 rows.
 - Row 0, columns 0-3: open burrow loop. Columns 4-7: partially filled burrow stages.
 - Row 1, columns 0-7: HUD fill levels of 0%, 14%, 29%, 43%, 57%, 71%, 86%, and 100%.
 
-## Godot Notes
+## JavaFX Notes
 
-Use a 32 x 32 region for each sprite. For the mouse and chef sheets, select the desired row for the facing direction and the four columns for its animation. For hot food, animate vertically through rows 1-4 at a fixed column. For HUD fill levels, select one frame from row 1 based on the current percentage.
+Use `GraphicsContext.drawImage` with a 32 x 32 source rectangle for each sprite. For the mouse and chef sheets, select the desired row for the facing direction and the four columns for its animation. For hot food, animate vertically through rows 1-4 at a fixed column. For HUD fill levels, select one frame from row 1 based on the current percentage. `ResourceManager` converts SVG images to PNG at runtime with Batik.
 
 These are original, compact prototype illustrations made from crisp-edged shapes. They provide a consistent layout and palette, but are not polished hand-drawn pixel animation. The eight directions are rotated approximations; redraw directional poses and expand the animation frames for production-quality movement.
